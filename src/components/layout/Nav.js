@@ -6,7 +6,7 @@ import Golf2 from '../../assets/golf2.png';
 const Nav = () => {
   return (
     <div className='nav'>
-      <div className='left'>
+      <div className='left-container'>
         <img
           id='logo'
           src={Golf2}
@@ -15,15 +15,13 @@ const Nav = () => {
             width: '80px',
           }}
         />
+        <div className='left-center-container'>
+          <p className='logo-text'>Nineteenth Hole</p>
+          <p className='logo-text'>Liquors</p>
+        </div>
       </div>
-      <div className='left-center'>
-        <p className='logo-text'>Nineteenth Hole</p>
-        <p className='logo-text'>Liquors</p>
-      </div>
-      <div className='white-space-fill' id='white-space-fill'>
-        {/*I keep space!*/}
-      </div>
-      <div className='right'>
+
+      <div className='right-container'>
         <a
           id='directions'
           href='https://www.google.com/maps/dir//Nineteenth+Hole+Liquor+Store,+826+N+Karwick+Rd,+Michigan+City,+IN+46360/@41.7329426,-86.8581031,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8811063111533013:0x6583a73c7601cd62!2m2!1d-86.855909!2d41.7329386!3e0'

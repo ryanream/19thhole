@@ -116,26 +116,22 @@ N.av Bar                   */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
 }
-.left {
+.left-container {
   /* border: 1px solid purple; */
-  align-self: flex-end;
-  justify-content: center;
 
   display: flex;
-}
-
-.left-center {
-  /* border: 1px solid pink; */
+  align-items: flex-end;
+  flex-wrap: nowrap;
 }
 
 .logo-text {
   /* border: 1px solid purple; */
-  display: flex;
-  justify-content: center;
-  text-align: left;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: left; */
   white-space: nowrap;
   font-family: 'Faustina', serif;
   color: rgb(41, 50, 65);
@@ -144,12 +140,7 @@ N.av Bar                   */
   font-size: 36px;
 }
 
-/* can this tag be removed at viewwidth < 500px? */
-.white-space-fill {
-  /* border: 1px solid pink; */
-  flex: 1;
-}
-.right {
+.right-container {
   display: flex;
   flex-direction: row;
 }
@@ -172,10 +163,6 @@ N.av Bar                   */
   white-space: nowrap;
 
   transition: 0.25s ease;
-}
-#directions {
-  /* text-decoration: none; */
-  /* padding-top: 6px; */
 }
 
 #directions:hover,
@@ -216,9 +203,7 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   /* font-family: 'Nunito', sans-serif; */
   /* border: 1px solid rgb(41, 50, 65); */
   outline: none;
-  /* align-self: center; */
-  /* width: 150px; */
-  /* box-sizing: border-box; */
+
   padding-left: 10px;
   border-radius: 10px;
 
@@ -232,9 +217,14 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   transform: scale(1.15, 1.01);
 }
 
+/* can this tag be removed at viewwidth < 500px? */
+.white-space-fill {
+  /* border: 1px solid pink; */
+  flex: 1;
+}
+
 .dropdowns {
   /* border: 1px solid blue; */
-
   margin: 10px 0;
   display: flex;
   flex: 0 1 560px;
@@ -261,16 +251,40 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   transition: 0.25s ease;
 }
 
-.beer:hover,
-.beer:focus,
-.wine:hover,
-.wine:focus,
-.liquor:hover,
-.liquor:focus,
-.cordial:hover,
-.cordial:focus {
+#beer:hover,
+#beer:focus,
+#wine:hover,
+#wine:focus,
+#liquor:hover,
+#liquor:focus,
+#cordials:hover,
+#cordials:focus {
   box-shadow: 2px 2px 6px rgb(61, 90, 128);
   font-style: italic;
+}
+.drop-menu * {
+  background-color: rgba(255, 255, 255, 0);
+}
+.drop-item {
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.drop-item:hover {
+  font-style: italic;
+  text-shadow: 2px 2px 5px black;
+}
+.drop-menu {
+  /* border: 1px solid pink; */
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+
+  padding: 15px 5px;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s ease-in-out;
 }
 /* END M.ENU BAR 
 /////////////////////////////////////////*/
