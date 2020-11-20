@@ -1,15 +1,22 @@
 @media only screen and (max-width: 550px) {
-  #dropdowns * {
+  #menu-buttons * {
     font-size: 14px;
   }
   #banner-text {
     font-size: 12px;
   }
   #search-bar,
-  #logo,
+  #logo-img,
   #white-space-fill {
     /* visibility: hidden; */
     display: none;
+  }
+
+  #nav {
+    justify-content: center;
+  }
+  #logo-text {
+    text-align: center;
   }
 }
 
@@ -102,7 +109,7 @@ N.av Bar                   */
 */
 
 .nav * {
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
 }
 
 .nav {
@@ -117,9 +124,8 @@ N.av Bar                   */
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
 }
-.left-container {
+.logo-container {
   /* border: 1px solid purple; */
 
   display: flex;
@@ -128,10 +134,9 @@ N.av Bar                   */
 }
 
 .logo-text {
-  /* border: 1px solid purple; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: left; */
+  /* border: 1px solid pink; */
+
+  text-align: right;
   white-space: nowrap;
   font-family: 'Faustina', serif;
   color: rgb(41, 50, 65);
@@ -214,7 +219,7 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
 #search-bar:focus,
 #search-bar:hover {
   box-shadow: 3px 3px 10px rgb(61, 90, 128);
-  transform: scale(1.15, 1.01);
+  transform: scale(1.05, 1.01);
 }
 
 /* can this tag be removed at viewwidth < 500px? */
@@ -223,19 +228,12 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   flex: 1;
 }
 
-.dropdowns {
-  /* border: 1px solid blue; */
-  margin: 10px 0;
-  display: flex;
-  flex: 0 1 560px;
-  justify-content: space-evenly;
-}
-
-.dropdowns * {
+.menu-buttons * {
   /* flex: 1 1 135px; */
   white-space: nowrap;
   text-transform: uppercase;
   padding: 0 5px;
+  background-color: rgba(255, 255, 255, 0);
 
   margin-left: 2px;
   margin-right: 2px;
@@ -247,44 +245,60 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   outline: none;
   background-color: white;
   border-radius: 5px;
-
-  transition: 0.25s ease;
+}
+.menu-buttons {
+  /* border: 1px solid blue; */
+  margin: 10px 0;
+  display: flex;
+  flex: 0 1 560px;
+  justify-content: space-evenly;
 }
 
-#beer:hover,
-#beer:focus,
-#wine:hover,
-#wine:focus,
-#liquor:hover,
-#liquor:focus,
-#cordials:hover,
-#cordials:focus {
-  box-shadow: 2px 2px 6px rgb(61, 90, 128);
+.drop-button {
+  /* border: 1px solid pink; */
+  transition: 0.25s ease;
+  width: 125px;
+}
+
+#liquor,
+#wine,
+#cordials {
+  border-radius: 0;
+  border-left: 2px solid rgb(41, 50, 65, 0.3);
+}
+
+.drop-button:hover,
+.drop-button:focus {
+  text-shadow: 1px 1px 3px rgb(41, 50, 65);
   font-style: italic;
 }
-.drop-menu * {
-  background-color: rgba(255, 255, 255, 0);
-}
+
 .drop-item {
   text-decoration: none;
   transition: 0.25s ease;
 }
 
-.drop-item:hover {
+/* hover over  */
+.drop-menu div:hover {
   font-style: italic;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 1px 1px 3px rgb(41, 50, 65);
 }
+
 .drop-menu {
-  /* border: 1px solid pink; */
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  transition: 0.25s ease-in-out;
+
+  box-shadow: 3px 3px 4px 0px rgb(41, 50, 65);
+
+  /* border-bottom: 1px solid rgb(41, 50, 65); */
+
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
 
   padding: 15px 5px;
   position: absolute;
 
   display: flex;
   flex-direction: column;
-  transition: 0.25s ease-in-out;
 }
 /* END M.ENU BAR 
 /////////////////////////////////////////*/

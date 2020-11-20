@@ -5,10 +5,11 @@ import Golf2 from '../../assets/golf2.png';
 
 const Nav = () => {
   return (
-    <div className='nav'>
-      <div className='left-container'>
+    // 2 - Contains logo and connect boxes
+    <div className='nav' id='nav'>
+      <div className='logo-container'>
         <img
-          id='logo'
+          id='logo-img'
           src={Golf2}
           style={{
             height: '80px',
@@ -16,8 +17,12 @@ const Nav = () => {
           }}
         />
         <div className='left-center-container'>
-          <p className='logo-text'>Nineteenth Hole</p>
-          <p className='logo-text'>Liquors</p>
+          <p className='logo-text' id='logo-text'>
+            Nineteenth Hole
+          </p>
+          <p className='logo-text' id='logo-text'>
+            Liquors
+          </p>
         </div>
       </div>
 
