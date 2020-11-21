@@ -46,7 +46,7 @@ const Menu = () => {
 
   return (
     // 3 - search, spacer, btn row
-    <div className='menu'>
+    <div className='menu' id='menu'>
       <div className='search'>
         <input type='text' placeholder='  search' id='search-bar' />
       </div>
@@ -109,7 +109,7 @@ const Menu = () => {
 
           {/* {currentMenu === 'wine' ? ( */}
           {winedrop ? (
-            <FadeIn delay={300}>
+            <FadeIn delay={300} transitionDuration={2000}>
               {/* // 4 - wine menu items */}
               <div className='drop-menu'>
                 {' '}
