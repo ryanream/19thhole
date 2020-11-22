@@ -68,9 +68,8 @@ const Menu = () => {
           {/* {currentMenu === 'beer' */}
           {beerdrop ? (
             // FADE THIS ENTIRE DIV?
-            <FadeIn delay={300}>
-              {/* 4 - beer menu items */}
-              <div className='drop-menu'>
+            <div className='drop-menu'>
+              <FadeIn delay={100} transitionDuration={500}>
                 <div>
                   {/* prettier-ignore */}
                   <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Burn 'Em{' '} </a>
@@ -87,8 +86,8 @@ const Menu = () => {
                   {/* prettier-ignore */}
                   <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Zorn{' '} </a>
                 </div>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           ) : null}
         </div>
         {/* 2 - wine btn, wine drop menu  */}
@@ -109,9 +108,8 @@ const Menu = () => {
 
           {/* {currentMenu === 'wine' ? ( */}
           {winedrop ? (
-            <FadeIn delay={300} transitionDuration={2000}>
-              {/* // 4 - wine menu items */}
-              <div className='drop-menu'>
+            <div className='drop-menu'>
+              <FadeIn delay={100} transitionDuration={500}>
                 {' '}
                 <div>
                   {/* prettier-ignore */}
@@ -129,8 +127,8 @@ const Menu = () => {
                   {/* prettier-ignore */}
                   <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} I need ice!{' '} </a>
                 </div>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           ) : null}
         </div>
 
@@ -153,8 +151,8 @@ const Menu = () => {
           {/* {currentMenu === 'liquor' ? ( */}
           {liquordrop ? (
             // 4 - liquor menu items
-            <FadeIn delay={300}>
-              <div className='drop-menu'>
+            <div className='drop-menu'>
+              <FadeIn delay={100} transitionDuration={500}>
                 <div>
                   {/* prettier-ignore */}
                   <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Bourbons{' '} </a>
@@ -171,8 +169,8 @@ const Menu = () => {
                   {/* prettier-ignore */}
                   <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Tequila (Mockingbird){' '} </a>
                 </div>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           ) : null}
         </div>
 
@@ -195,8 +193,8 @@ const Menu = () => {
           {/* {currentMenu === 'cordials' ? ( */}
           {cordialsdrop ? (
             // 4 - Cordials menu items
-            <FadeIn delay={300}>
-              <div className='drop-menu'>
+            <div className='drop-menu'>
+              <FadeIn delay={100} transitionDuration={500}>
                 <div>
                   {/* prettier-ignore */}
                   <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Cordials Here{' '} </a>
@@ -213,8 +211,8 @@ const Menu = () => {
                   {/* prettier-ignore */}
                   <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Sugar For You{' '} </a>
                 </div>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           ) : null}
         </div>
       </div>

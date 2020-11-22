@@ -11,7 +11,7 @@ const Body = () => {
     <div className='body' id='body'>
       <div className='body-section' id='body-section'>
         <div className='image-container' id='image-container'>
-          <a href='https://wine.com'>
+          <a href='https://wine.com' target='_blank' rel='noopener noreferrer'>
             {/*  ////////////  IMAGE   /////////////////*/}
             <img id='image-photo' src={maple} alt='Bourbon maple' />
           </a>
@@ -32,7 +32,7 @@ const Body = () => {
       <div className='body-section' id='body-section'>
         <div className='image-container' id='image-container'>
           {/*  ////////////  IMAGE   /////////////////*/}
-          <a href='wine.com'>
+          <a href='wine.com' target='_blank' rel='noopener noreferrer'>
             <img id='image-photo' src={ombre} alt='blackberry ombre' />
           </a>
         </div>
@@ -44,7 +44,7 @@ const Body = () => {
           </div>
           <div className='info-text' id='info-text'>
 
-          <p> Image is background image instead of a tag with img inside.... lis delectus ad maiores iure sunt velit, ipsam itaque! Cum blanditiis in maiores asperiores vitae illo repudiandae soluta nemo doloremque quo quaerat dolorum, ab quas fugiat! Officia officiis temporibus dolorum fuga animi odio. Nemo nostrum, ullam voluptatem beatae placeat officia, quos, blanditiis quaerat quis possimus sequi alias? Dicta officiis excepturi optio repellat accusamus soluta doloremque facilis inventore iure! Error, dolores. Amet repellat eligendi in id reprehenderit corrupti ipsum cumque ut, neque cupiditate similique repudiandae sequi minima, doloribus suscipit. </p>
+          <p> Image is background image instead of a tag with img inside.... lis  similique repudiandae sequi minima, doloribus suscipit. </p>
           <p> Lorem </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Body = () => {
       <div className='body-section' id='body-section'>
         <div className='image-container' id='image-container'>
           {/*  ////////////  IMAGE   /////////////////*/}
-          <a href='wine.com'>
+          <a href='wine.com' target='_blank' rel='noopener noreferrer'>
             <img id='image-photo' src={maple} alt='bourbon maple cranberry' />
           </a>
         </div>
@@ -64,7 +64,7 @@ const Body = () => {
           </div>
           <div className='info-text' id='info-text'>
 
-          <p> Image is background image instead of a tag with img inside.... lis delectus ad maiores iure sunt velit, ipsam itaque! Cum blanditiis in maiores asperiores vitae illo repudiandae soluta nemo doloremque quo quaerat dolorum, ab quas fugiat! Officia officiis temporibus dolorum fuga animi odio. Nemo nostrum, ullam voluptatem beatae placeat officia, quos, blanditiis quaerat quis possimus sequi alias? Dicta  </p>
+          <p> Image is background image instead of a tag with img inside.... lis delectus ad maiores iure sunt velit, i placeat alias? Dicta  </p>
           <p> Lorem </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Body = () => {
       <div className='body-section' id='body-section'>
         <div className='image-container' id='image-container'>
           {/*  ////////////  IMAGE   /////////////////*/}
-          <a href='wine.com'>
+          <a href='wine.com' target='_blank' rel='noopener noreferrer'>
             <img id='image-photo' src={ombre} alt='blackberry ombre' />
           </a>
         </div>
@@ -84,7 +84,7 @@ const Body = () => {
           </div>
           <div className='info-text' id='info-text'>
 
-          <p> Image is background image instead of a tag with img inside.... lis delectus ad maiores iure sunt velit, ipsam itaque! Cum blanditiis in  </p>
+          <p> Image is background image instead of a tag with img insideum blanditiis in  </p>
           <p> Lorem </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Body = () => {
       <div className='body-section' id='body-section'>
         <div className='image-container' id='image-container'>
           {/*  ////////////  IMAGE   /////////////////*/}
-          <a href='wine.com'>
+          <a href='wine.com' target='_blank' rel='noopener noreferrer'>
             <img id='image-photo' src={peppermint} alt='peppermint bark' />
           </a>
         </div>

@@ -1,7 +1,7 @@
 /*  */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 775px) {
   #menu-buttons * {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   #banner-text {
     font-size: 12px;
@@ -14,7 +14,8 @@
   }
 
   #nav {
-    justify-content: center;
+    justify-content: space-evenly;
+    overflow: visible;
   }
   #logo-text {
     text-align: center;
@@ -24,9 +25,14 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
+  /* this is not working for some reason */
+  /* #nav {
+    justify-content: space-between;
+  } */
   #menu {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
   }
 
   #info-header,
@@ -55,7 +61,7 @@
 
 /* Includes N.av and M.enu */
 .parent {
-  height: 150vh;
+  /* height: 150vh; */
   display: flex;
   flex-direction: column;
 }
@@ -67,16 +73,19 @@
 
 /* /////////////////////////////////////
 B.anner - With message */
-.banner {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  height: 40px;
-  z-index: 2;
+#banner {
   text-align: center;
 
-  background: hsla(182, 82%, 93%, 1);
+  width: 100%;
+  top: 0;
+  height: 20px;
 
+  overflow: visible;
+
+  z-index: 10;
+  position: sticky;
+
+  background: hsla(182, 82%, 93%, 1);
   background: linear-gradient(
     0deg,
     hsla(182, 82%, 93%, 1) 5%,
@@ -123,8 +132,8 @@ N.av Bar                   */
 .right          connect divs  -200px (+padding)
 */
 
-.nav * {
-  /* border: 1px solid pink; */
+#nav * {
+  transition: 0.25s ease;
 }
 
 .nav {
@@ -160,9 +169,12 @@ N.av Bar                   */
   font-size: 36px;
 }
 
-.right-container {
+#right-container {
+  padding: 5px;
+
   display: flex;
   flex-direction: row;
+  overflow: visible;
 }
 
 #directions,
@@ -218,6 +230,7 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   display: flex;
   justify-content: center;
   margin: 1%;
+  overflow: visible;
 }
 #search-bar {
   /* font-family: 'Nunito', sans-serif; */
@@ -247,23 +260,26 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   /* flex: 1 1 135px; */
   white-space: nowrap;
   text-transform: uppercase;
-  padding: 0 5px;
   background-color: rgba(255, 255, 255, 0);
-
-  margin-left: 2px;
-  margin-right: 2px;
-
   font-weight: 300;
   font-size: 18px;
+
+  padding: 0 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  overflow: hidden;
 
   border: none;
   outline: none;
   background-color: white;
-  border-radius: 5px;
 }
+/* button container */
 .menu-buttons {
   /* border: 1px solid blue; */
   margin: 10px 0;
+
+  overflow: hidden;
+
   display: flex;
   flex: 0 1 560px;
   justify-content: space-evenly;
@@ -273,13 +289,11 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   /* border: 1px solid pink; */
   transition: 0.25s ease;
   width: 125px;
+  border-left: 2px solid rgb(41, 50, 65, 0.3);
 }
 
-#liquor,
-#wine,
 #cordials {
-  border-radius: 0;
-  border-left: 2px solid rgb(41, 50, 65, 0.3);
+  border-right: 2px solid rgb(41, 50, 65, 0.3);
 }
 
 .drop-button:hover,
@@ -294,27 +308,26 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
 }
 
 /* hover over  */
-.drop-menu div:hover {
-  font-style: italic;
-  text-shadow: 1px 1px 3px rgb(41, 50, 65);
-}
 
 .drop-menu {
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease;
 
   box-shadow: 3px 3px 4px 0px rgb(41, 50, 65);
+  background-color: rgba(255, 255, 255, 1);
 
   /* border-bottom: 1px solid rgb(41, 50, 65); */
 
-  background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
-
   padding: 15px 5px;
   position: absolute;
   z-index: 2;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+}
+.drop-menu div:hover {
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgb(41, 50, 65);
 }
 /* END M.ENU BAR 
 /////////////////////////////////////////*/
@@ -352,7 +365,7 @@ Body - Images, Sales                   */
 
   width: 50%;
   padding: 10px;
-  overflow: auto;
+  overflow: hidden;
 
   position: relative;
   flex-shrink: -6;
@@ -363,6 +376,7 @@ Body - Images, Sales                   */
 
   position: relative;
   width: 50%;
+  overflow: hidden;
 }
 
 /* <img/> inside <a/> tag */
@@ -379,7 +393,7 @@ Body - Images, Sales                   */
   left: 0;
   right: 0;
   margin: 0 auto auto auto;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* .info-header {
@@ -393,10 +407,10 @@ Body - Images, Sales                   */
 Footer */
 
 #footer {
-  margin: 2% 0;
-  /* padding-left: 5px; */
   font-weight: 600;
-  border-radius: 3px;
+
+  /* margin: 15px 0; */
+  padding-left: 5px;
 
   background: hsla(214, 35%, 37%, 1);
 
