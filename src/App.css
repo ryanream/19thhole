@@ -1,46 +1,3 @@
-/*  */
-@media only screen and (max-width: 775px) {
-  #menu-buttons * {
-    /* font-size: 14px; */
-  }
-  #banner-text {
-    font-size: 12px;
-  }
-  #search-bar,
-  #logo-img,
-  #white-space-fill {
-    /* visibility: hidden; */
-    display: none;
-  }
-
-  #nav {
-    justify-content: space-evenly;
-    overflow: visible;
-  }
-  #logo-text {
-    text-align: center;
-  }
-  #body-section {
-    max-height: 200px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  /* this is not working for some reason */
-  /* #nav {
-    justify-content: space-between;
-  } */
-  #menu {
-    /* display: none; */
-    visibility: hidden;
-  }
-
-  #info-header,
-  #info-text p {
-    font-size: 10px;
-  }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -49,6 +6,7 @@
  font-family: 'Nunito', sans-serif;
  font-family: 'Faustina', serif;
  */
+/*  */
 
 * {
   overflow-x: hidden;
@@ -82,7 +40,7 @@ B.anner - With message */
 
   overflow: visible;
 
-  z-index: 10;
+  /* z-index: 3; */
   position: sticky;
 
   background: hsla(182, 82%, 93%, 1);
@@ -142,7 +100,6 @@ N.av Bar                   */
   border-radius: 10px;
 
   position: relative;
-  z-index: 1;
 
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +169,7 @@ N.av Bar                   */
 /* ////////////////////////////////////////////
 M.ENU BAR - Product d.ropdowns, s.earch          */
 
-.menu {
+.menu-bar {
   /* border: 1px solid pink; */
   /* min-height: 50px; */
   width: 100%;
@@ -315,15 +272,13 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
   box-shadow: 3px 3px 4px 0px rgb(41, 50, 65);
   background-color: rgba(255, 255, 255, 1);
 
-  /* border-bottom: 1px solid rgb(41, 50, 65); */
-
   border-radius: 5px;
   padding: 15px 5px;
   position: absolute;
-  z-index: 2;
 
-  /* display: flex;
-  flex-direction: column; */
+  /* border-bottom: 1px solid rgb(41, 50, 65); */
+  /* display: flex;*/
+  /* flex-direction: column;  */
 }
 .drop-menu div:hover {
   font-style: italic;
@@ -332,11 +287,134 @@ M.ENU BAR - Product d.ropdowns, s.earch          */
 /* END M.ENU BAR 
 /////////////////////////////////////////*/
 
+/* /////////////////////////////////////////////////////////// */
+/* S lide Menu */
+/* /////////////////////////////////////////////////////////// */
+
+#slide-menu-container {
+  width: 100vw;
+  height: 100vh;
+  top: 20px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.hamburger-icon-container {
+  right: 30px;
+  top: 145px;
+
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  transition: 0.25s ease;
+
+  /* transition-delay: 1s; */
+}
+
+.slide-container * {
+  /* display: none; */
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slide-container {
+  translate: 1000px, 20px;
+  overflow-x: hidden;
+
+  height: 100vh;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #e0fbfc;
+}
+
+.slide-title {
+  /* border: 1px solid pink; */
+  /* color: white; */
+
+  background-color: rgba(255, 255, 255);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 130px;
+}
+
+#title-text {
+  color: #ee6c4d;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: dashed;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 2px #293241;
+  font-family: 'Faustina', serif;
+  text-align: center;
+
+  /* border: 2px solid orange; */
+  /* height: 60px; */
+  position: relative;
+  /* bottom: 0; */
+  text-align: center;
+}
+
+/* inside s lide, does not include h eader */
+
+#slide-content {
+  /* border: 2px solid pink; */
+
+  /* position: absolute; */
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  transition: 1s ease;
+}
+
+.slidepage-button-container,
+#slide-menu-button {
+  /* border: 1px solid red; */
+
+  height: 55px;
+  flex: 1 1 100%;
+}
+
+#slide-menu-button {
+  /* border: 2px solid #293241; */
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+  margin: 10px;
+  position: relative;
+
+  width: 75%;
+  padding-left: 20px;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  background-color: rgb(61, 90, 128);
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* END - Slide Menu */
+/*  //////////////////////////////////////////////////////////// */
+
 /* //////////////////////////////////////
 Body - Images, Sales                   */
-.body * {
-  /* border: 1px solid pink; */
-}
 
 .body {
   /* border: 1px solid plum; */
@@ -442,4 +520,62 @@ Footer */
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3d5a80", endColorstr="#98c1d9", GradientType=1 );
+}
+
+/* ///////////////////// MEDIA QUERIES //////////////////////////////*/
+
+@media only screen and (max-width: 775px) {
+  #banner-text {
+    font-size: 12px;
+  }
+  #search-bar,
+  #logo-img,
+  #white-space-fill {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  #nav {
+    justify-content: space-evenly;
+    overflow: visible;
+  }
+  #logo-text {
+    text-align: center;
+  }
+  #body-section {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* this is not working for some reason */
+  #nav {
+    flex-direction: column;
+    align-content: center;
+  }
+  #menu-bar {
+    display: none;
+  }
+
+  .hamburger-icon-container * {
+    display: visible;
+  }
+  .hamburger-icon-container {
+    /* border: 2px solid rgb(41, 50, 65); */
+    visibility: visible;
+  }
+
+  #title-img {
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: -2px 2px 10px #293241;
+    overflow: visible;
+  }
+
+  #info-header,
+  #info-text p {
+    font-size: 10px;
+  }
 }

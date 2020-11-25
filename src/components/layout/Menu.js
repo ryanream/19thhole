@@ -46,7 +46,7 @@ const Menu = () => {
 
   return (
     // 3 - search, spacer, btn row
-    <div className='menu' id='menu'>
+    <div className='menu-bar' id='menu-bar'>
       <div className='search'>
         <input type='text' placeholder='  search' id='search-bar' />
       </div>
@@ -65,7 +65,6 @@ const Menu = () => {
             Craft Beer{' '}
           </button>
 
-          {/* {currentMenu === 'beer' */}
           {beerdrop ? (
             // FADE THIS ENTIRE DIV?
             <div className='drop-menu'>

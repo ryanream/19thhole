@@ -2,6 +2,7 @@ import React from 'react';
 import ombre from '../../assets/blackberry-ombre.jpg';
 import maple from '../../assets/Maple-Cranberry-Bourbon-Cocktail.jpg';
 import peppermint from '../../assets/Peppermint-Bark-Martini.jpg';
+// import Slider from './Slider';
 
 //  src={maple} src={peppermint}
 
