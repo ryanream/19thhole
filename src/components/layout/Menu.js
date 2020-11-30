@@ -69,21 +69,21 @@ const Menu = () => {
             // FADE THIS ENTIRE DIV?
             <div className='drop-menu'>
               <FadeIn delay={100} transitionDuration={500}>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Burn 'Em{' '} </a>
+                  <a href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Burn 'Em{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Greenbush{' '} </a>
+                  <a href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Greenbush{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} 3 Floyds{' '} </a>
+                  <a href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} 3 Floyds{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Zorn{' '} </a>
+                  <a href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Zorn{' '} </a>
                 </div>
               </FadeIn>
             </div>
@@ -110,21 +110,21 @@ const Menu = () => {
             <div className='drop-menu'>
               <FadeIn delay={100} transitionDuration={500}>
                 {' '}
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Fine Wines Here{' '} </a>
+                  <a href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Fine Wines Here{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Fancy Wine{' '} </a>
+                  <a href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Fancy Wine{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Burgundy{' '} </a>
+                  <a href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Burgundy{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} I need ice!{' '} </a>
+                  <a href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} I need ice!{' '} </a>
                 </div>
               </FadeIn>
             </div>
@@ -152,21 +152,21 @@ const Menu = () => {
             // 4 - liquor menu items
             <div className='drop-menu'>
               <FadeIn delay={100} transitionDuration={500}>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Bourbons{' '} </a>
+                  <a href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Bourbons{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Vodka{' '} </a>
+                  <a href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Vodka{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Gin{' '} </a>
+                  <a href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Gin{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Tequila (Mockingbird){' '} </a>
+                  <a href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Tequila (Mockingbird){' '} </a>
                 </div>
               </FadeIn>
             </div>
@@ -194,21 +194,21 @@ const Menu = () => {
             // 4 - Cordials menu items
             <div className='drop-menu'>
               <FadeIn delay={100} transitionDuration={500}>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Cordials Here{' '} </a>
+                  <a href='https://burnembrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Cordials Here{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Mixers Too{' '} </a>
+                  <a href='https://www.greenbushbrewing.com/' target='_blank' rel='noopener noreferrer' > {' '} Mixers Too{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Another Sweet One{' '} </a>
+                  <a href='https://www.3floyds.com/' target='_blank' rel='noopener noreferrer' > {' '} Another Sweet One{' '} </a>
                 </div>
-                <div>
+                <div className='drop-item'>
                   {/* prettier-ignore */}
-                  <a className='drop-item' href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Sugar For You{' '} </a>
+                  <a href='http://zornbrewworks.com/' target='_blank' rel='noopener noreferrer' > {' '} Sugar For You{' '} </a>
                 </div>
               </FadeIn>
             </div>

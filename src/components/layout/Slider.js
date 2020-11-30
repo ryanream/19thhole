@@ -8,54 +8,50 @@ const Slider = () => {
   const [slider, setSlider] = useState(() => {});
 
   const [styleState, setStyleState] = useState({
-    index: '-1',
+    contentIndex: '-1',
     position: 'absolute',
     color: '#ee6c4d',
   });
 
   const visibility = styleState.visibility;
-  const index = styleState.index;
+  const contentIndex = styleState.contentIndex;
+  const menuIndex = styleState.menuIndex;
   const color = styleState.color;
 
   const toggleSlider = () => {
     if (slider !== true) {
       // display slide menu
+
       setSlider(slider => true);
 
       setStyleState(state => {
-        return {
-          ...state,
-          index: '6',
-          color: '#293241',
-          visibility: 'visibile !important',
-        };
+        // prettier-ignore
+        return { ...state, contentIndex: '6', menuIndex:'6', color: '#293241', visibility: 'visible', };
       });
-      // setDisplay(display => (display = 'none'));
-      // setColor(color => (color = '#293241'));
     } else {
       // hide slide menu
 
       setSlider(slider => false);
+
+      setTimeout(() => {
+        setStyleState(state => {
+          return { ...state, menuIndex: '' };
+        });
+      }, 500);
+
       setStyleState(state => {
-        return {
-          ...state,
-          index: '-1',
-          color: '#ee6c4d',
-        };
-      }); // setDisplay(display => (display = 'none'));
-      // setColor(color => (color = '#ee6c4d'));
+        // prettier-ignore
+        return { ...state, contentIndex: '-1',visibility:'', color: '#ee6c4d' };
+      });
     }
-    console.log('zIndex = ');
-    // console.log(zIndex);
   };
-  // on slide=true, send prop to body to hide overflow?
 
   return (
     <div
       // style={{ styleState }}
       className='slide-menu-container'
       id='slide-menu-container'
-      // style={{ zIndex: index }}
+      style={{ zIndex: menuIndex }}
     >
       <div
         className='hamburger-icon-container'
@@ -74,14 +70,22 @@ const Slider = () => {
       {/* style={{ position: 'absolute' }} */}
       <Fade left when={slider === true}>
         <div
-          className='slide-container'
-          id='slide-container'
+          className='slide-content-container'
+          id='slide-content-container'
           style={{ styleState }}
         >
-          <div className='slide-title' id='slide-title'>
-            <img id='title-img' src={Lights} alt='holiday lights drawing' />
-            <p id='title-text'>Holiday </p>
-            <p id='title-text'> Specialties</p>
+          <div
+            className='slide-title'
+            id='slide-title'
+            style={{ backgroundImage: 'url(' + Lights + ')' }}
+          >
+            <div
+              className='slide-title-text-container'
+              id='slide-title-text-container'
+            >
+              <p id='title-text'>Holiday </p>
+              <p id='title-text'> Specialties</p>
+            </div>
           </div>
           <div className='slide-content' id='slide-content'>
             <div className='slidepage-button-container'>
